@@ -1,14 +1,19 @@
-import React from "react";
-import Habit from "./components/habit";
+import React, { Component } from "react";
+import Habits from "./components/habits";
+import Navbar from "./components/navbar";
 import "./app.css";
 
-function App() {
-  return (
-    <li className="habit">
-      <h1>Hello</h1>
-      <Habit />
-    </li>
-  );
+class App extends Component {
+  render() {
+    return (
+      <>
+        <Navbar></Navbar>
+        <li className="habit">
+          <Habits />
+        </li>
+      </>
+    );
+  }
 }
 
 export default App;
