@@ -8,9 +8,12 @@ class App extends Component {
     return (
       <>
         <Navbar></Navbar>
+        <input className="input" type="text" placeholder="Habit" />
+        <button className="addBtn">Add</button>
         <li className="habit">
           <Habits />
         </li>
+        <button className="resetBtn">Reset All</button>
       </>
     );
   }
